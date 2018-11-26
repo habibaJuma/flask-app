@@ -1,0 +1,77 @@
+<!DOCTYPE html>  
+<html lang="en">
+    <head>
+        <title>FLASK APP</title>
+        
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">  -->
+    </head>
+    
+    <body>
+
+<!-- {% block body %} -->
+<!-- {% if session['logged_in'] %} -->
+<h1>WELCOME TO FLASK APPLICATION</h1>
+<h3> Please enter your name</h3>
+<!-- {% else %} -->
+  <!-- <form action="/sign in" method="POST">
+    <div class="sign in">
+        <div class="sign-screen">
+            <div class="app-tittle">
+                    <h1>Sign in</h1> 
+            </div>-->
+   <h1>Sign in </h1>
+   <form  action="" method="post" role="form">
+      <div class="form-group">
+         <br>
+            <div class="sign in-form"></div>
+            <div class="control-group">
+            <!-- <input type="text" class="login-field" value="" placeholder="Email" name="Email"> -->
+            <br>
+
+            <label class="sign in-field-icon fui-user" for="signing_in"></label> 
+            <input type="text" class="form-control" id="name" name="name" placeholder="Email" name="="Email> 
+            <br>
+
+            <!-- <input type="password" class="sign in-field" value="" placeholder="password" name="password"> -->
+            <br>
+
+            <label class="sign in-field-icon fui-lock" for="sign in-pass"></label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter a password.">
+            <br>
+            <!-- <input type="submit" value="Sign in" class="btn-primary btn-large btn-block">  -->
+            <br>   
+      </div>
+      <button type="submit" class="btn btn-success">Sign in</button>
+</form>
+ 
+ 
+  <h1>Sign Up </h1>
+  <h3>New to the site, welcome to sign up here!</h3>
+  <form  action="" method="post" role="form">
+
+    <div class="form-group">
+      <label for="name">First name:</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="your name?">
+      <br>
+      <label for="name"> Sir name:</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="your name?">
+      <br>
+      <label for="email">Email:</label>
+      <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email">
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" id="password" name="password" placeholder="Enter a password.">
+ 
+    </div>
+    <button type="submit" class="btn btn-success">Sign Up</button>
+  </form>
+ 
+  
+<!-- {% endif %} -->
+<!-- {% endblock %} -->
+  </div>
+ </body>
+</html>
